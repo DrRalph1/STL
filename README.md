@@ -1,10 +1,10 @@
 ## STL - Android Code Challenge
 
-NB: <h3>This Android App was proudly developed by <b>Rapheal Djane Kotei</b> for SuperTech LTD</h3>
+This Android App was proudly developed by <b>Rapheal Djane Kotei</b> for SuperTech LTD 
 
 <hr>
 
-## The APP is made of two Activities:
+## The APP is made up of two Activities:
 
 1. The First Activity retrives a list of books from the Open Library Books API and nicely displays it in a listview.
 
