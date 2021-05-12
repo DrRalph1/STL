@@ -4,13 +4,12 @@ This Android App was proudly developed by <b>Rapheal Djane Kotei</b> for SuperTe
 
 <hr>
 
-## The APP is made up of two Activities:
+## Features and Functionality
+The APP is made up of two Activities:
 
 1. The First Activity retrives a list of books from the Open Library Books API and nicely displays it in a listview.
 
 2. The Second Activity displays the details of the book, on click of an item in the First Activity.
-
-## Features and Functionality
 
 1. The App allows you to bookmark your favourite book(s)
 
