@@ -2,7 +2,7 @@
 
 This Android App was proudly developed by <b>Rapheal Djane Kotei</b> specifically for SuperTech LTD 
 
-<br>
+<hr>
 
 ## Features and Functionality
 1. The APP is made up of two Activities: The First Activity retrives a list of books from the Open Library Books API and nicely displays it in a listview. The Second Activity also displays the details of the book, on click of an item in the First Activity.
@@ -11,7 +11,7 @@ This Android App was proudly developed by <b>Rapheal Djane Kotei</b> specificall
 
 2. The App also has a progress bar that notifies the user when the API is been loaded.
 
-<br>
+<hr>
 
 ## Android Manifest
 
@@ -41,3 +41,4 @@ This Android App was proudly developed by <b>Rapheal Djane Kotei</b> specificall
 </manifest>
 
 
+<br>
