@@ -1,6 +1,6 @@
 ## STL - Android Code Challenge
 
-This Android App was proudly developed by <b>Rapheal Djane Kotei</b> specifically for SuperTech LTD 
+This Android App was proudly developed by <b>Rapheal Djane Kotei</b>, specifically for <b>SuperTech LTD</b> 
 
 <hr>
 
@@ -9,7 +9,7 @@ This Android App was proudly developed by <b>Rapheal Djane Kotei</b> specificall
 
 1. The App allows you to bookmark your favourite book(s)
 
-2. The App also has a progress bar that notifies the user when the API is been loaded.
+2. The App also has a progress bar that notifies the user when the API is loading.
 
 <hr>
 
