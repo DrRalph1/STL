@@ -46,11 +46,13 @@ public class BooksAdapter extends ArrayAdapter<BooksController> {
         ImageView coverImage = (ImageView)convertView.findViewById(R.id.ivCoverImage);
         TextView title = (TextView)convertView.findViewById(R.id.tvTitle);
         TextView author = (TextView)convertView.findViewById(R.id.tvAuthor);
+        TextView yearOfPublication = (TextView)convertView.findViewById(R.id.tvYearOfPublication);
 
         final BooksController bookDetails = booksList.get(position);
         isbn.setText(bookDetails.getISBN());
         title.setText(bookDetails.getTitle());
         author.setText(bookDetails.getAuthor());
+        yearOfPublication.setText(bookDetails.getYearOfPublication());
 
         try {
             URL imageUrl = new URL(bookDetails.getCoverImage());

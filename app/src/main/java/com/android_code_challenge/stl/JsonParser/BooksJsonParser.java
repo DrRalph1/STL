@@ -152,6 +152,9 @@ public class BooksJsonParser extends AsyncTask<String, String, Void> {
                             coverImage = coverImage.replaceAll("\\p{P}","");
                             bookDetails.coverImage = "https://covers.openlibrary.org/b/id/" + coverImage + "-M.jpg";
 
+                            // Set Year of Publication
+                            bookDetails.yearOfPublication = details.getString("publish_date");
+
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }

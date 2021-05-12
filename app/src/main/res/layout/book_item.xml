@@ -6,7 +6,7 @@
 
     <ImageView
         android:id="@+id/ivCoverImage"
-        android:layout_width="110dp"
+        android:layout_width="130dp"
         android:layout_height="110dp"
         android:layout_margin="8dp" />
 
@@ -18,7 +18,7 @@
         android:layout_margin="8dp"
         android:layout_toRightOf="@+id/ivCoverImage"
         android:text="Title"
-        android:textSize="22dp" />
+        android:textSize="21dp" />
 
     <TextView
         android:id="@+id/tvAuthor"
@@ -32,16 +32,15 @@
         android:textSize="18dp" />
 
     <TextView
-        android:id="@+id/tvISBN"
+        android:id="@+id/tvYearOfPublication"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:visibility="invisible"
         android:layout_marginLeft="8dp"
         android:lineHeight="5dp"
+        android:layout_marginTop="8dp"
         android:layout_toRightOf="@+id/ivCoverImage"
         android:layout_below="@+id/tvAuthor"
-        android:text="ISBN"
-        android:textSize="18dp" />
+        android:textSize="15dp" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnBookmark"
@@ -50,10 +49,23 @@
         android:layout_marginLeft="8dp"
         android:lineHeight="5dp"
         android:focusable="false"
+        android:layout_marginTop="5dp"
         android:focusableInTouchMode="false"
         android:layout_toRightOf="@+id/ivCoverImage"
-        android:layout_below="@+id/tvAuthor"
+        android:layout_below="@+id/tvYearOfPublication"
         android:text="Bookmark"
         android:textSize="18dp"/>
+
+    <TextView
+        android:id="@+id/tvISBN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_marginLeft="8dp"
+        android:lineHeight="5dp"
+        android:layout_toRightOf="@+id/ivCoverImage"
+        android:layout_below="@+id/btnBookmark"
+        android:text="ISBN"
+        android:textSize="18dp" />
 
 </RelativeLayout>
