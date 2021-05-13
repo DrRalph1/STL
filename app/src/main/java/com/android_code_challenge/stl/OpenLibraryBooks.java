@@ -3,6 +3,7 @@ package com.android_code_challenge.stl;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -12,6 +13,7 @@ import android.widget.Toast;
 
 import com.android_code_challenge.stl.Adapter.BooksAdapter;
 import com.android_code_challenge.stl.Controller.BooksController;
+import com.android_code_challenge.stl.Controller.DBController;
 import com.android_code_challenge.stl.JsonParser.BooksJsonParser;
 
 import java.util.ArrayList;
@@ -19,21 +21,22 @@ import java.util.List;
 
 public class OpenLibraryBooks extends AppCompatActivity {
 
+    DBController myDb;
+
     BooksJsonParser jsonParser;
     public List<BooksController> books = new ArrayList<>();
     // International Standard Book Number's for Open Library OpenLibraryBooks
     String ISBNs = "ISBN:0670872911," +
-                    "ISBN:9780375868313," +
-                    "ISBN:0439309107," +
-                    "ISBN:9781596437203," +
-                    "ISBN:0545221714," +
-                    "ISBN:1459804287," +
-                    "ISBN:0823413497";
+                    "ISBN:1580896944," +
+                    "ISBN:1442488247," +
+                    "ISBN:0764115812," +
+                    "ISBN:0816744408," ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         try {
             jsonParser = (BooksJsonParser) new BooksJsonParser(this, this, OpenLibraryURL.olbURL + ISBNs).execute();
@@ -41,7 +44,6 @@ public class OpenLibraryBooks extends AppCompatActivity {
             ListView listView;
             listView = (ListView)this.findViewById(R.id.listviewOfBooks);
             BooksAdapter adapter = new BooksAdapter(this, books);
-            listView.setAdapter(adapter);
 
             listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override

@@ -25,7 +25,7 @@ import static android.text.Layout.JUSTIFICATION_MODE_INTER_WORD;
 
 public class BookDetailsAdapter extends ArrayAdapter<BooksController> {
 
-    // Instantioting variables for the custom adapter class
+    // Initializing variables for the custom adapter class
     List<BooksController> booksList;
     private Context context;
 
