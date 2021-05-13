@@ -4,12 +4,12 @@ This Android App was proudly developed by <b>Rapheal Djane Kotei</b>, specifical
 
 <hr>
 
-## Features and Functionality
+## Features and Functionalities
 1. The APP is made up of two Activities: The First Activity retrives a list of books from the Open Library Books API and nicely displays it in a listview. The Second Activity also displays the details of the book, on click of an item in the First Activity.
 
 1. The App allows you to bookmark your favourite book(s)
 
-2. The App also has a progress bar that notifies the user when the API is loading.
+2. The App also has a progress bar that notifies users when the API resource is loading.
 
 <hr>
 
