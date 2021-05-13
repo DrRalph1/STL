@@ -1,6 +1,6 @@
 ## STL - Android Code Challenge
 
-This Android App was proudly developed by <b>Rapheal Djane Kotei</b>, specifically for <b>SuperTech LTD</b> - 12th April, 2021.
+This Android App was proudly developed by <b>Rapheal Djane Kotei</b>, specifically for <b>SuperTech LTD</b>.
 
 <hr>
 
@@ -20,6 +20,7 @@ This Android App was proudly developed by <b>Rapheal Djane Kotei</b>, specifical
     package="com.android_code_challenge.stl">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
